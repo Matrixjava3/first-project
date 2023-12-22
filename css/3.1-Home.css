@@ -1,0 +1,44 @@
+/* 3.1 HOME SECTION......................................................................................... */
+         .home {
+             height:100vh;
+             background-image:url(../images/ddd.png);
+             background-position: cover;
+             position: relative;
+         }
+         .home-content{
+             position: absolute;
+             top:50%;
+             left:50%;
+             transform: translate(-50%,-50%);
+             text-align: center;
+             width:65%;
+         }
+         .home-content .main-text {
+             color: #dfd2d2;
+             font-size: 55px;
+             text-transform: uppercase;
+         }
+         .sub-main-text {
+            font-size: 20px;
+             margin-top: 20px;
+             margin-bottom: 20px;
+             color: blanchedalmond;
+             letter-spacing: 1.5px;
+             line-height: 1.8px;
+         }
+         .home-content .btn {
+             min-width: 150px;
+             padding: 15px 0;
+             border-radius: 5px;
+             border: 0;
+             cursor: pointer;
+             font-size: 18px;
+         }
+         .btn-start {
+             margin-right: 10px;
+             
+         }
+         .btn-learn{
+            background-color: rgb(236, 236, 243);
+            color: rgb(20, 20, 20);
+         }

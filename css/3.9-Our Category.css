@@ -1,0 +1,99 @@
+/* 3.9 Our Category......................................................................................... */
+        .our-category{
+            width: 98%;
+            height: 80vh;
+        }
+         .category-title{
+            color: #910a0a;
+            margin-top: 30px;
+            margin-bottom: 20px;
+            text-align: center;
+            &:hover {
+                color: #ff0000;
+            }
+        }
+        .category-content{
+            overflow: hidden;
+            padding-left: 70px;
+        }
+        .category-item{
+            display: block;
+            float: left;
+            /* overflow: auto; */
+            width: 28%;
+            background-color: #d1caca;
+            padding: 17px 13px;
+            text-align: center;
+            position: relative;
+            border-radius: 25px; /* Rounded corners */
+            box-shadow: 0 0px 10px rgba(32, 32, 32, 0.5); /* Gray box shadow */
+        }
+        .category-img{
+            width: 90%;
+            margin: auto;
+            position: relative;
+        }
+        .category-overlay{
+            position: absolute;
+            top:0;
+            right:0;
+            bottom: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, .5);
+            visibility: hidden;
+            opacity:0;
+        }
+        .category-item:hover .category-overlay{
+            visibility: visible;
+            opacity: 1;
+        }
+        .category-overlay a {
+            display: block;
+            width: 40px;
+            height:40px;
+            background-color: #7ba7ff;
+            color:#fff;
+            margin-left: auto;
+        }
+        .category-overlay a i{
+            line-height: 40px;
+        }
+        .category-info-title{
+            color:#222;
+            padding:10px 0;
+        }
+        .category-info-text{
+            color:#999;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+        .category-item.mg{
+            margin: 0 5%;
+        }
+        .category-img img{
+            width: 100%;
+        }
+        .category-item:after{
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 0;
+            top:0;
+            left: 0;
+            background-color: #333;
+            opacity: 0;
+        }
+        .category-item:hover:after{
+            width: 100%;
+            height: 100%;
+            opacity:.4;
+            transition: 1s;
+        }
+        .category-item:hover .category-info-title{
+            color:#fff;
+            transition:  .5s;
+        }
+        .category-item:hover .category-info-text{
+            color: blue;
+            transition: 1s;
+        }

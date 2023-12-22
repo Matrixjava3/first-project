@@ -1,0 +1,70 @@
+/* 3- SECTIONS.............................................................................................. */
+/* 3.0 HEADER................................................................................................ */
+     .header {
+         width:100%;
+         position: fixed;
+         z-index: 10;
+         background-color: rgba(2, 1, 1, 0.7);
+     }
+     .header .logo {
+         width:40%;
+         float: left;
+     }
+     .nav{
+         width:60%;
+         float: left;
+         text-align: right;
+     }
+     .clear{
+         clear: both;
+     }
+     .header .container .header-content .nav > li{
+         list-style: none;
+         display: inline-block;
+     }
+     .header .container .header-content .nav > li > a{
+         color: rgb(255, 255, 255);
+         padding:12px;
+         display: block;
+     }
+     .header .container .header-content .nav > li > a:after ,
+     .header .container .header-content .nav  > li > a.active:after{
+         content:"";
+         width:0;
+         height:3px;
+         display: block;
+         /* background-color: rgb(255, 51, 0); */
+         margin-top: 2px;
+         transition: .5s;
+     }
+     .header .container .header-content .nav > li > a.active:after{
+      width:100%;
+    }
+     .header .container .header-content .nav > li > a:hover:after{
+         width: 100%;
+     }
+     .blog{
+         position: relative;
+     }
+
+     /* blog post */
+     .a-bp{
+         color: white;
+         display: block;
+         padding: 10px;
+     }
+     .bp {
+         position: absolute;
+         width: 120px;
+         padding:5px;
+         background-color: blue;
+         text-align: center;
+         left:78%;
+         visibility: hidden;
+         opacity: 0;
+         transition: opacity 0.5s;
+         }
+         .dd:hover + .bp{
+             visibility: visible;
+             opacity:1;
+         }

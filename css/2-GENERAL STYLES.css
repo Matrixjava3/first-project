@@ -1,0 +1,48 @@
+/*  1- COMMON STYLES
+    2- GENERAL STYLES
+    3- SECTIONS  
+      3.0  HEADER
+      3.1  HOME SECTION 
+      3.2  ABOUT SECTION 
+      3.3  PORTFOLIO SECTION .
+      3.4  OFFER SECTION .
+      3.5  SERVICE SECTION .
+      3.6  NUMBERS SECTION .
+      3.7  PRICING SECTION .
+      3.8  TESTIMONIAL SECTION .
+      3.9  Category SECTION 
+      3.10 BLOG SECTION 
+      3.11 FOOTER SECTION
+ */
+/* 2- GENERAL STYLES........................................................................................ */
+     body {
+     font-family: 'varela round' , sans-serif;
+    }
+ *  {
+     margin:0;
+     padding: 0;
+     box-sizing: border-box;
+     }
+    .container {
+     width:80%;
+     margin: auto;
+     }
+     a {
+        text-decoration: none;
+     }
+     .section-header {
+         text-align: center;   
+     }
+     .section-header .section-title{
+         font-size: 35px;
+         text-transform: capitalize;
+         margin-bottom: 9px;
+         margin-top: 6px;
+     }
+     .section-header .line{
+         display: block;
+         width: 62px;
+         height: 4px;
+         background-color: royalblue;
+        margin: 0  auto  70px  auto;
+     }
